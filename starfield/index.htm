@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Particle world</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<style>
+
+* { padding: 0; margin: 0; }
+
+html, body { height: 100%; width: 100%; }
+
+body {
+	color: #FFF;
+	overflow: hidden;
+
+	font-size: 1em;
+
+	-webkit-transition:all .2s linear;
+		 -moz-transition:all .2s linear; 
+			 -o-transition:all .2s linear; 
+					transition:all .2s linear; 
+}
+
+@media screen and (max-width:1000px) {
+	body { font-size:1em; }
+}
+@media screen and (max-width:900px) {
+	body { font-size:0.9em; }
+}
+@media screen and (max-width:800px) {
+	body { font-size:0.8em; }
+}
+@media screen and (max-width:600px) {
+	body { font-size:0.7em; }
+}
+@media screen and (max-width:400px) {
+	body { font-size:0.6em; }
+}
+@media screen and (max-width:300px) {
+	body { font-size:0.5em; }
+}
+
+#title {
+	position: absolute;
+	top: 40%;
+	left: 0; right: 0;
+	z-index: 3;
+	font-family: 'Open Sans';
+	font-weight: 300;	
+	text-align: center;
+}
+
+h1 { font-size: 5.5em; }
+h2 { font-size: 3.25em; font-style: italic }
+
+canvas { 
+	position: absolute; 
+	z-index: 2;
+}
+
+iframe, audio { z-index: 1;}
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<canvas id="c"></canvas>
+	<div id="title">
+		<h1>we're all made of particles</h1>
+	</div>
+	<script type="text/javascript" src="starfield.js"></script>
+</body>
+</html>
