@@ -14,4 +14,17 @@ $(function(){
     slider.goToNextSlide();
     return false;
   });
+
+	$(document).keydown(function(e){
+		if (e.keyCode == 37) { 
+			slider.goToPreviousSlide();
+			return false;
+		}
+
+		if (e.keyCode == 39) {
+			slider.goToNextSlide();
+			return false;
+		}
+	});
+
 }); 
