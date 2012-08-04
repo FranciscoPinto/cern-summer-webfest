@@ -2,3 +2,24 @@
     height: 4em;
     width: 4em;
 }
+
+.navigation {
+    background: #2C2C2C;
+    overflow: hidden;
+}
+
+#topbar {
+    width:100%;
+    position: absolute;
+}
+
+#nav-button {
+    border-radius: 0px 0px 20px 20px ;
+    background:  #2C2C2C;
+    margin: 0px;
+    padding: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-right: 5em;
+}
+

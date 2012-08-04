@@ -19,59 +19,65 @@
 
     </head>
     <body>
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+        <div id="topbar">
+            <div class="navigation">
+                <ul class="nav nav-pills" >
+                    <li class="active">
+                    <a class="image-link"  >
+                        <img class="chapter-image" src="img/firefox.png" >
+                        <p>Subtitle</p>
                     </a>
-                    <div class="nav-collapse">
-
-                        <ul class="nav">
-                            <li class="active">
-                            <a class="image-link"  >
-                                <img class="chapter-image" src="img/firefox.png" >
-                                <p>Subtitle</p>
-                            </a>
-                            </li>
-                            <li class="">
-                            <a class="image-link"  >
-                                <img class="chapter-image" src="img/firefox.png" >
-                                <p>Subtitle</p>
-                            </a>
-                            </li>
-                            <li class="">
-                            <a class="image-link"  >
-                                <img class="chapter-image" src="img/firefox.png" >
-                                <p>Subtitle</p>
-                            </a>
-                            </li>
-                            <li class="">
-                            <a class="image-link"  >
-                                <img class="chapter-image" src="img/firefox.png" >
-                                <p>Hide it!</p>
-                            </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
+                    </li>
+                    <li class="">
+                    <a class="image-link"  >
+                        <img class="chapter-image" src="img/firefox.png" >
+                        <p>Subtitle</p>
+                    </a>
+                    </li>
+                    <li class="">
+                    <a class="image-link"  >
+                        <img class="chapter-image" src="img/firefox.png" >
+                        <p>Subtitle</p>
+                    </a>
+                    </li>
+                </ul>
             </div>
+            <a id="nav-button" class="pull-right" href="#">Nav me!! <i class="icon-chevron-down
+                    icon-white"></i> </a> 
         </div>
-        <div id="left-hidden">
-        </div>
-        <div id="main" class="span12">
-            fopjefoj apojpefjpwj pwej epfj 
-        </div>
-        <div id="right-hidden">
+        <div style="clear: both;"></div>
+        <div id="wrapper">
+            <div id="left-hidden">
+            </div>
+            <div id="main" class="span12">
+                fopjefoj apojpefjpwj pwej epfj 
+            </div>
+            <div id="right-hidden">
+            </div>
         </div>
         <script>
             $(".collapse").collapse();
-            $(".navbar-inner").hover(function(){
-                $(this).height('0.2em');
-            },function(){});
+
+            $(document).ready(function() {
+                var original_height = $(".navigation").height();
+
+                $(".navigation").height('0em');
+
+                $("#nav-button").click(function(){
+                    if ( $(".navigation").height() == 0) {
+                        $(".navigation").animate({
+                            'height' : original_height }
+                        );
+                        $("#nav-button").find('i').attr('class', 'icon-chevron-up icon-white');
+                        } else {
+                        $(".navigation").animate({
+                            'height' : '0em'
+                        }
+                        );
+                        $("#nav-button").find('i').attr('class', 'icon-chevron-down icon-white');
+                    }
+                });
+            });
         </script>
     </body>
 </html>
