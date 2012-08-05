@@ -1,13 +1,12 @@
 function load_slides() {
     var filelist = [
         "What is the world made of",
-    "Strong interactions" /*,
-                            "The Electromagnetic Interaction",
-                            "Nuclear decay and the weak interaction",
-                            "The Three Generations of Matter",
-                            "The Higgs",
-                            "Antimatter"*/
-    ];
+        "The strong interaction",
+        "The electromagnetic interaction",
+        "The weak interaction",
+        "Three Generations",
+        "Antimatter",
+        "The Higgs"
 
     //$(filelist).each(function(){alert($(this).html());});
     var last = false;
