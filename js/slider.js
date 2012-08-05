@@ -1,4 +1,4 @@
-$(function(){
+function set_sliders(){
   var slider = $('#slider').bxSlider({
     controls: false,
 		easing: 'easeInOutCubic'
@@ -27,4 +27,4 @@ $(function(){
 		}
 	});
 
-}); 
+} 
