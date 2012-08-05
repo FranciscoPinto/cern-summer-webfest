@@ -13,6 +13,7 @@
         <script src="js/jquery.bxSlider/jquery.bxSlider.min.js"></script>
         <script src="js/javascript.js"></script>
         <script src="js/slider.js"></script>
+
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
         <link href="css/structure.css" rel="stylesheet">
         <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
@@ -71,6 +72,9 @@
             $(".collapse").collapse();
 
             $(document).ready(function() {
+
+                // Load slides 
+                load_slides();
                 var original_height = $(".navigation").height();
 
                 $(".navigation").height('0em');
