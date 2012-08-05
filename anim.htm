@@ -4,32 +4,120 @@
 
 <script src="js/jquery.bxSlider/jquery.easing.1.3.js"></script>
 <script src="js/jquery.bxSlider/jquery.bxSlider.min.js"></script>
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="css/structure.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.js"></script>
 
 <link rel="stylesheet" href="http://jqueryui.com/themes/base/jquery.ui.all.css" type="text/css" media="all" />
 
 <style>
-
 	#animation {
-		width: 300px;
-		text-align: center;
+		width: 25%;
+		margin: 0 auto;
 	}
 
-	.bx-captions {
-		font-family: sans-serif;
-	}
 </style>
 
 <body>
+	<a class="btn" data-toggle="modal" href="#readmore" >Read more</a>
 	<div id="animation">
-	<ul id="frames">
-		<li><img title="This is the first frame" src="animation/img1.png">	
-		<li><img title="This is the second frame" src="animation/img2.png">	
-		<li><img title="This is the third frame" src="animation/img3.png">	
-	</ul>
+		<ul id="frames">
+			<li><img title="This is the first frame" src="animation/img1.png">	
+			<li><img title="This is the second frame" src="animation/img2.png">	
+			<li><img title="This is the third frame" src="animation/img3.png">	
+		</ul>
 
-
-	<div id="slider"></div>
+		<div id="slider"></div>
 	</div>
+
+	<div class="modal hide fade" id="readmore">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">x</button>
+				<h2>This is Spinal Tap!</h2>
+			</div>
+			<div class="modal-body">
+				
+				<h3>Big Bottom</h3>
+				The bigger the cushion, the sweeter the pushin
+				That's what I said.
+				The looser the waistband, the deeper the quicksand
+				Or so I have read.
+				My baby fits me like a flesh tuxedo.
+				I love to sink her with my pink torpedo.
+				Big bottom
+				Big bottom
+				Talk about bum cakes,
+				My gal's got 'em.
+				Big bottom,
+				Drive me out of my mind.
+				How can I leave this behind?
+				I saw her on monday, twas my lucky bun day
+				You know what I mean.
+				I love her each weekday, each velvety cheekday
+				You know what I mean.
+				My love gun's loaded and she's in my sights
+				Big game's waiting there inside her tights
+				Big bottom
+				Big bottom
+				Talk about mud flaps
+				My gal's got 'em.
+				Big bottom
+				Drive me out of my mind.
+				How can I leave this behind?
+				<h3>Stonehenge</h3>
+				In ancient times hundreds of years before the dawn of history
+				Lived this strange rights of pain the [Incomprehensible]
+				No one knows who they were what they were doing
+				But the legacy remains here into the living rock of Stonehenge
+
+				Stonehenge, where the demons dwell
+				Where the banshees live and they do live well
+				Stonehenge where a man is a man
+				And the children dance to the pipes of pan
+
+				Stonehenge, 'tis a magic place
+				Where the moon doth rise with a dragon's face
+				Stonehenge where the virgins lie
+				And the prayer of devils fill the midnight sky
+
+				And you my love, won't you take my hand?
+				We'll go back in time to that mystic land
+				Where the dew drops cry and the cats meow
+				I will take you there, I will show you how
+
+				And oh, how they danced
+				The little children of Stonehenge
+				Beneath the haunted moon for fear
+				That day break might come too soon
+
+				And where were they now
+				The little people of Stonehenge
+				And what would they say to us
+				If we were here tonight
+				<h3>Tonight I'm gonna rock you</h3>
+				Little girl, it's a great big world but there's
+				only on of me
+				You can't touch 'cause I cost too much but
+				Tonight I'm gonna rock you
+				Tonight I'm gonna rock you
+				Tonight!
+				You're sweet but you're just four feet
+				And you still got your baby teeth
+				You're too young and I'm too well hung
+				Tonight I'm gonna rock you
+				Tonight I'm gonna rock you
+				Tonight!
+				You're hot, you take all we got, not a dry
+				seat in the house
+				Next day, we'll be on our way
+				Tonight I'm gonna rock you
+				Tonight!
+				Chorus:
+				Little girl, it's a great big world, but there's
+				only one of me-
+			</div>
+		</div>
 <script type="text/javascript">
 var anim = $('#frames').bxSlider({
 	controls: false,
@@ -40,14 +128,16 @@ var anim = $('#frames').bxSlider({
 
 	
 $("#slider" ).slider({
-		value: 0,
-		min: 0,
-		max: 2,
-		step: 1,
-		slide: function( event, ui ) {
-			anim.goToSlide(ui.value);
-		}
-	});
+	value: 0,
+	min: 0,
+	max: 2,
+	step: 1,
+	slide: function(event, ui) {
+		anim.goToSlide(ui.value);
+	}
+});
+
+$("#readmore").modal("hide");
 </script>
 
 </body>
