@@ -9,8 +9,8 @@
 
 <h1>The Strong Interaction</h1>
 
-<div id="animation">
-	<ul id="frames">
+<div id="quark-animation">
+	<ul id="quark-frames">
 		<li><img title="Two quarks are bound together by the strong force." src="img/quark_deconf/1.png">	
 		<li><img title="As their distance increases, so does their attraction." src="img/quark_deconf/2.png">	
 		<li><img title="More and more energy is stored in the force field." src="img/quark_deconf/3.png">	
@@ -21,7 +21,7 @@
 		<li><img title="This is the reason why we can never see colored objects alone. We call this confinement." src="img/quark_deconf/8.png">	
 	</ul>
 
-	<div id="slider"></div>
+	<div id="quark-animation-slider"></div>
 </div>
 
 <p class="abstract">There must be some kind of force that glues together the quarks in the
@@ -43,3 +43,24 @@ be different about this strong, nuclear force, that glues together the
 quarks. There are three different kinds of "charge", as opposed to
 electromagnetism, where there are only two, which we call positive and
 negative. For the strong force, the "charge" is called color.</p>
+
+<script type="text/javascript">
+var anim = $('#quark-frames').bxSlider({
+	controls: false,
+	mode: 'fade',
+	speed: 100,
+	captions: true	
+});
+
+	
+$("#quark-animation-slider" ).slider({
+	value: 0,
+	min: 0,
+	max: 7,
+	step: 1,
+	slide: function(event, ui) {
+		anim.goToSlide(ui.value);
+	}
+});
+
+</script>
