@@ -1,0 +1,5 @@
+Electron : \n Composition : Elementary particle \n Statistics : Fermionic \n Generation : First \n Interactions	 : Gravity, Electromagnetic, Weak \n Mass : 0.510998928 MeV/c \ Spin : 	1/2
+Muon \n Composition :  Elementary particle \n Statistics : Fermionic \n Generation : Second \n Interactions : \n -Gravity \n -Electromagnetic \n -Weak \n Mass : 105.65836668(38) MeV/c2 \n Spin : 1/2
+
+Tau \n Composition : Elementary particle \n Statistics : Fermionic \n Generation : Third \n Interactions : \n -Gravity \n -Electromagnetic \n -Weak \n Mass : 1,776.82±0.16 MeV/c2 \n Spin : 1/2
+
