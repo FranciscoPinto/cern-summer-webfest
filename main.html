@@ -13,6 +13,7 @@
         <script src="js/jquery.bxSlider/jquery.bxSlider.min.js"></script>
         <script src="js/javascript.js"></script>
         <script src="js/slider.js"></script>
+
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
         <link href="css/structure.css" rel="stylesheet">
         <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
@@ -25,7 +26,9 @@
             <a id="go-next"><img class="arrow" src="img/arrow_right.png"/></a>
 
             <ul id="slider">
-                <li class="slide"><h1>First slide</h1>
+                <li class="slide">
+                <h1>First slide</h1>
+                </li>
                 <li class="slide"><h1>Second slide</h1>
                 <li class="slide"><h1>Third slide</h1>
             </ul>
@@ -69,6 +72,9 @@
             $(".collapse").collapse();
 
             $(document).ready(function() {
+
+                // Load slides 
+                load_slides();
                 var original_height = $(".navigation").height();
 
                 $(".navigation").height('0em');

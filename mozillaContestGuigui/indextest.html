@@ -1,0 +1,24 @@
+ <!DOCTYPE HTML>
+        <html>
+        <head>
+        <title>Index Test</title>
+        <link rel ="stylesheet" type="text/css" href="style.css"/>
+        <script type="text/javascript" src="js/raphael-min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+        </head>
+        <body>
+		
+		<div id="test2">
+			<div id="popup">
+			
+			</div>
+		</div>
+		
+		<script type="text/javascript" >
+		var paper = Raphael("test2",1000,1000);
+		var t = Feynman("test2",'{"lines":[[0,0,2,1,1],[2,1,3,2,2],[2,3,3,2,-11],[0,4,2,3,-11],[2,1,4,0,14],[2,3,4,4,14],[3,2,4,2,17]]}');
+		//var t = Feynman("test2",'{"lines":[[0,0,1,1,15],[0,2,1,1,16],[1,1,2,1,13]]}');
+		//Editor("test2");
+		</script>
+		</body>
+        </html>
