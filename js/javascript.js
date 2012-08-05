@@ -7,6 +7,7 @@ function load_slides() {
         "Three Generations",
         "Antimatter",
         "The Higgs"
+    ];
 
     //$(filelist).each(function(){alert($(this).html());});
     var last = false;
@@ -38,9 +39,13 @@ function to_filename(title) {
 
 function get_html(file, prefix, extension, last ){
 
-    $.ajax( "./" + prefix + "/" + file  + "." + extension ).done( function(data) {
+    $.ajax( {
+        url :"./" + prefix + "/" + file  + "." + extension,
+        dataType: "html" 
+    }
+        ).done( function(data) {
         //alert('<li class="slide"><div>' + data + "</div></li>");
-        $("#slider").append('<li class="slide"><div>' + data + "</div></li>");
+        $("#slider").append('<li class="slide"><div class="span12">' + data + "</div></li>");
         if (last) {
             set_sliders();
 
