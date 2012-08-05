@@ -1,0 +1,42 @@
+﻿ <!DOCTYPE HTML>
+        <html>
+        <head>
+        <title>Index Test</title>
+        <link rel ="stylesheet" type="text/css" href="style.css"/>
+        <script type="text/javascript" src="js/raphael-min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+        </head>
+        <body>
+
+		<div id="menu">
+		<form>
+		<input onClick="gParticleType=1" type="radio" name="group1" value="1" checked>e<br>
+		<input onClick="gParticleType=2" type="radio" name="group1" value="2">µ<br>
+		<input onClick="gParticleType=3" type="radio" name="group1" value="3">t<br>
+		<input onClick="gParticleType=4" type="radio" name="group1" value="4">ν<br>
+		<input onClick="gParticleType=5" type="radio" name="group1" value="5">ν<br>
+		<input onClick="gParticleType=6" type="radio" name="group1" value="6">ν<br>
+		<input onClick="gParticleType=7" type="radio" name="group1" value="7">u<br>
+		<input onClick="gParticleType=8" type="radio" name="group1" value="8">d<br>
+		<input onClick="gParticleType=9" type="radio" name="group1" value="9">c<br>
+		<input onClick="gParticleType=10" type="radio" name="group1" value="10">s<br>
+		<input onClick="gParticleType=11" type="radio" name="group1" value="11">t<br>
+		<input onClick="gParticleType=12" type="radio" name="group1" value="12">b<br>
+		<input onClick="gParticleType=13" type="radio" name="group1" value="13">Υ<br>
+		<input onClick="gParticleType=14" type="radio" name="group1" value="14">Z<br>
+		<input onClick="gParticleType=15" type="radio" name="group1" value="15">W+<br>
+		<input onClick="gParticleType=16" type="radio" name="group1" value="16">W-<br>
+		<input onClick="gParticleType=17" type="radio" name="group1" value="17">H<br>
+		<input onClick="gParticleType=18" type="radio" name="group1" value="18">g<br>
+		<input onClick="gParticleType=19" type="radio" name="group1" value="19">p<br>
+		<input onClick="gParticleType=20" type="radio" name="group1" value="20">n<br>
+		</form>
+		</div>
+		<div id="Canvas">
+		</div>
+		<script type="text/javascript" >
+		var paper = Raphael("Canvas",800,500);
+		var t = Editor("Canvas");
+		</script>
+		</body>
+        </html>

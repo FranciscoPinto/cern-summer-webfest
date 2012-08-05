@@ -1,0 +1,11 @@
+#Canvas
+{
+	float:right;
+	position:relative;
+	width:1000px;
+	box-shadow: 0 6px 6px rgba(0,0,0,0.5); 
+}
+
+#menu {
+float: left;
+}
