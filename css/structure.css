@@ -31,14 +31,21 @@
 }
 
 body {
-    background: url(img/testbg.jpg) no-repeat;
+    background: url(img/bg_texture.png) repeat-x repeat-y;
     background-size: 100%;
     margin: 0;
     padding: 0;
 }
-.slide {
-    font-size: 100px;
-}
+/*.slide {
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}*/
+
+   #bx-wrapper {
+    margin: 0 auto !important;
+    width: 100% !important;
+   }
 
 .arrow {
 }
@@ -88,4 +95,11 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
 
     right: 0;
+}
+
+.content {
+    margin-top: 2em;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
 }

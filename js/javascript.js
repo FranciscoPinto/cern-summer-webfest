@@ -46,11 +46,19 @@ function get_html(file, prefix, extension, last ){
         ).done( function(data) {
         //alert('<li class="slide"><div>' + data + "</div></li>");
         $("#slider").append('<li class="slide"><div class="span12">' + data + "</div></li>");
+        //$("ul.nav-pills").append('<li><a href="#">' + $(data).find('h1').text() + '</a></li>');
         if (last) {
             set_sliders();
-
+            fill_menu();
         }
         //return data;
     });
 
+}
+
+
+function fill_menu() {
+    $($(".slide").get()).each(function() {
+        $("ul.nav-pills").append('<li><a href="#">' + $(this).find('h1').html() + '</a></li>');
+    });
 }
