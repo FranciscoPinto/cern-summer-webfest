@@ -26,9 +26,7 @@
     z-index: -1;
 }
 
-#wrapper {
-    z-index:100;
-}
+
 
 body {
     background: url(img/bg_texture.png) repeat-x repeat-y;
@@ -42,12 +40,12 @@ body {
     overflow: hidden;
 }*/
 
-   #bx-wrapper {
-    margin: 0 auto !important;
-    width: 100% !important;
-   }
 
 .arrow {
+}
+
+#wrapper {
+    margin-top: 2em;
 }
 
 #go-next, #go-prev {

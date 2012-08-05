@@ -1,13 +1,13 @@
 function load_slides() {
     var filelist = [
-        "What is the world made of",
         "The strong interaction",
-        "The electromagnetic interaction",
-        "The weak interaction",
-        "Three Generations",
-        "Antimatter",
-        "The Higgs"
-    ];
+    "The weak interaction",
+    "What is the world made of",
+    "The electromagnetic interaction",
+    "Three Generations",
+    "Antimatter",
+    "The Higgs"
+        ];
 
     //$(filelist).each(function(){alert($(this).html());});
     var last = false;
@@ -21,13 +21,11 @@ function load_slides() {
         var filename = to_filename(filelist[i]);
         // get 
         var chapter = get_html(filename, "chapter", "html", last);
-        //var readmore = get_html(filelist[i], "readmore", "html");
+        var readmore = get_html(filelist[i], "readmore", "html");
         // here we just need the URL
         //var icon = get_html(filelist[i], "img", "png");
         //
         //alert (chapter);
-
-
 
     }
 
@@ -41,11 +39,13 @@ function get_html(file, prefix, extension, last ){
 
     $.ajax( {
         url :"./" + prefix + "/" + file  + "." + extension,
-        dataType: "html" 
+    dataType: "html" 
     }
-        ).done( function(data) {
+    ).done( function(data) {
         //alert('<li class="slide"><div>' + data + "</div></li>");
-        $("#slider").append('<li class="slide"><div class="span12">' + data + "</div></li>");
+        if (prefix == "chapter") {
+            $("#slider").append('<li class="slide"><div class="span12">' + data + "</div></li>");
+        }
         //$("ul.nav-pills").append('<li><a href="#">' + $(data).find('h1').text() + '</a></li>');
         if (last) {
             set_sliders();
@@ -59,6 +59,6 @@ function get_html(file, prefix, extension, last ){
 
 function fill_menu() {
     $($(".slide").get()).each(function() {
-        $("ul.nav-pills").append('<li><a href="#">' + $(this).find('h1').html() + '</a></li>');
+        $("ul.nav-pills").append('<li><img style="width:3em;height:3em;"><a href="#">' + $(this).find('h1').html() + '</a></li>');
     });
 }
