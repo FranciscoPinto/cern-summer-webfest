@@ -12,20 +12,26 @@
 <link rel="stylesheet" href="http://jqueryui.com/themes/base/jquery.ui.all.css" type="text/css" media="all" />
 
 <style>
-	#animation {
-		width: 25%;
-		margin: 0 auto;
-	}
 
+	#animation {
+		margin: 0 auto;
+		width: 850px;
+		text-align: center;
+	}
 </style>
 
 <body>
 	<a class="btn" data-toggle="modal" href="#readmore" >Read more</a>
 	<div id="animation">
 		<ul id="frames">
-			<li><img title="This is the first frame" src="animation/img1.png">	
-			<li><img title="This is the second frame" src="animation/img2.png">	
-			<li><img title="This is the third frame" src="animation/img3.png">	
+			<li><img title="Two quarks are bound together by the strong force." src="img/quark_deconf/1.png">	
+			<li><img title="As their distance increases, so does their attraction." src="img/quark_deconf/2.png">	
+			<li><img title="More and more energy is stored in the force field." src="img/quark_deconf/3.png">	
+			<li><img title="More and more energy is stored in the force field." src="img/quark_deconf/4.png">	
+			<li><img title="More and more energy is stored in the force field." src="img/quark_deconf/5.png">	
+			<li><img title="More and more energy is stored in the force field." src="img/quark_deconf/6.png">	
+			<li><img title="... Until the energy is sufficient to create new particles!" src="img/quark_deconf/7.png">	
+			<li><img title="This is the reason why we can never see colored objects alone. We call this confinement." src="img/quark_deconf/8.png">	
 		</ul>
 
 		<div id="slider"></div>
@@ -130,7 +136,7 @@ var anim = $('#frames').bxSlider({
 $("#slider" ).slider({
 	value: 0,
 	min: 0,
-	max: 2,
+	max: 7,
 	step: 1,
 	slide: function(event, ui) {
 		anim.goToSlide(ui.value);
